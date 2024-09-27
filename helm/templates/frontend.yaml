@@ -22,7 +22,7 @@ spec:
             - containerPort: 3000
           env:
             - name: REACT_APP_NAMESPACES
-              value: { { .Release.Namespace } }
+              value: "{ { .Release.Namespace } }"
 
 ---
 apiVersion: v1
